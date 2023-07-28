@@ -93,6 +93,5 @@ public class LoginTests extends Base {
 
         assertEquals(actualTitle, expectedTitle);
         loginPage = new MenuPage().logout();
-//        Thread.sleep(3000);
     }
 }
