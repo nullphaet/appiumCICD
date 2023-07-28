@@ -1,0 +1,176 @@
+[INFO ] 2023-07-28 14:22:46.176 Base:127 - Android driver set up successfully
+[INFO ] 2023-07-28 14:22:49.367 TestListener:28 - Test invalidPassword started at 28-07-2023_14:22:49
+[INFO ] 2023-07-28 14:22:51.079 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:22:53.006 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:22:53.694 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:22:54.978 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:22:55.913 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:22:55
+[ERROR] 2023-07-28 14:22:55.915 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:22:58.231 TestListener:28 - Test invalidUsername started at 28-07-2023_14:22:58
+[INFO ] 2023-07-28 14:22:58.241 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:22:59.768 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:23:01.284 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:23:01.925 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:23:02.453 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:23:02.460 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:23:02
+[INFO ] 2023-07-28 14:23:04.325 TestListener:28 - Test successfulLogin started at 28-07-2023_14:23:04
+[INFO ] 2023-07-28 14:23:05.703 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:23:07.454 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:23:08.118 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:23:09.678 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:23:10.585 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:23:12.606 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:23:12.661 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:23:12
+[INFO ] 2023-07-28 14:23:14.919 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:23:16.012 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:23:56.088 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:24:04.504 Base:127 - Android driver set up successfully
+[INFO ] 2023-07-28 14:24:05.429 TestListener:28 - Test invalidPassword started at 28-07-2023_14:24:05
+[INFO ] 2023-07-28 14:24:06.941 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:24:08.584 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:24:09.145 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:24:10.552 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:24:10.951 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:24:10
+[ERROR] 2023-07-28 14:24:10.952 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:24:12.940 TestListener:28 - Test invalidUsername started at 28-07-2023_14:24:12
+[INFO ] 2023-07-28 14:24:12.944 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:24:14.133 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:24:15.745 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:24:16.311 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:24:16.445 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:24:16.446 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:24:16
+[INFO ] 2023-07-28 14:24:17.907 TestListener:28 - Test successfulLogin started at 28-07-2023_14:24:17
+[INFO ] 2023-07-28 14:24:19.142 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:24:20.727 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:24:21.291 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:24:22.480 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:24:22.648 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:24:24.495 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:24:24.502 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:24:24
+[INFO ] 2023-07-28 14:24:25.935 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:24:26.698 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:30:19.588 Base:127 - Android driver set up successfully
+[INFO ] 2023-07-28 14:30:21.205 TestListener:28 - Test invalidPassword started at 28-07-2023_14:30:21
+[INFO ] 2023-07-28 14:30:22.768 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:30:24.455 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:30:25.240 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:30:26.401 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:30:27.368 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:30:27
+[ERROR] 2023-07-28 14:30:27.369 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:30:29.265 TestListener:28 - Test invalidUsername started at 28-07-2023_14:30:29
+[INFO ] 2023-07-28 14:30:29.269 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:30:30.555 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:30:32.233 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:30:32.826 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:30:33.034 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:30:33.037 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:30:33
+[INFO ] 2023-07-28 14:30:34.564 TestListener:28 - Test successfulLogin started at 28-07-2023_14:30:34
+[INFO ] 2023-07-28 14:30:35.327 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:30:36.964 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:30:37.552 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:30:38.823 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:30:39.077 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:30:40.903 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:30:40.913 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:30:40
+[INFO ] 2023-07-28 14:30:42.319 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:30:43.028 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:52:07.013 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:52:15.831 Base:127 - Android driver set up successfully
+[INFO ] 2023-07-28 14:52:16.820 TestListener:28 - Test invalidPassword started at 28-07-2023_14:52:16
+[INFO ] 2023-07-28 14:52:18.762 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:52:20.497 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:52:21.104 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:52:22.282 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:52:22.783 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:52:22
+[ERROR] 2023-07-28 14:52:22.786 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:52:24.403 TestListener:28 - Test invalidUsername started at 28-07-2023_14:52:24
+[INFO ] 2023-07-28 14:52:24.406 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:52:25.701 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:52:27.313 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:52:27.869 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:52:28.029 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:52:28.057 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:52:28
+[INFO ] 2023-07-28 14:52:29.596 TestListener:28 - Test successfulLogin started at 28-07-2023_14:52:29
+[INFO ] 2023-07-28 14:52:30.319 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:52:31.436 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:52:32.041 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:52:33.334 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:52:33.607 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:52:35.374 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:52:35.385 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:52:35
+[INFO ] 2023-07-28 14:52:36.973 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:52:37.810 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:55:48.820 Base:127 - Android driver set up successfully
+[INFO ] 2023-07-28 14:55:50.542 TestListener:28 - Test invalidPassword started at 28-07-2023_14:55:50
+[INFO ] 2023-07-28 14:55:52.241 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:55:53.937 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:55:54.550 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:55:55.658 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:55:55.674 TestListener:38 - Test invalidPassword passed at 28-07-2023_14:55:55
+[INFO ] 2023-07-28 14:55:57.355 TestListener:28 - Test invalidUsername started at 28-07-2023_14:55:57
+[INFO ] 2023-07-28 14:55:57.365 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:55:58.171 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:55:59.825 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:56:01.144 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:56:01.380 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:56:01.395 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:56:01
+[INFO ] 2023-07-28 14:56:03.092 TestListener:28 - Test successfulLogin started at 28-07-2023_14:56:03
+[INFO ] 2023-07-28 14:56:03.884 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:56:05.509 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:56:06.085 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:56:07.250 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:56:07.453 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:56:09.555 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:56:09.608 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:56:09
+[INFO ] 2023-07-28 14:56:10.968 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:56:11.757 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:59:26.773 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:59:35.688 Base:127 - Android driver set up successfully
+[INFO ] 2023-07-28 14:59:37.559 TestListener:28 - Test invalidPassword started at 28-07-2023_14:59:37
+[INFO ] 2023-07-28 14:59:39.239 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:59:40.972 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:59:41.580 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:59:42.590 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:59:42.606 TestListener:38 - Test invalidPassword passed at 28-07-2023_14:59:42
+[INFO ] 2023-07-28 14:59:44.341 TestListener:28 - Test invalidUsername started at 28-07-2023_14:59:44
+[INFO ] 2023-07-28 14:59:44.349 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:59:45.677 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:59:47.321 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:59:47.909 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:59:48.092 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:59:48.107 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:59:48
+[INFO ] 2023-07-28 14:59:49.659 TestListener:28 - Test successfulLogin started at 28-07-2023_14:59:49
+[INFO ] 2023-07-28 14:59:50.930 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:59:52.554 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:59:53.157 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:59:54.668 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:59:55.688 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:59:58.433 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:59:58.448 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:59:58
+[INFO ] 2023-07-28 15:00:00.921 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 15:00:02.282 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 15:30:58.832 Base:91 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 15:31:07.040 Base:128 - Android driver set up successfully
+[INFO ] 2023-07-28 15:31:08.520 TestListener:28 - Test invalidPassword started at 28-07-2023_15:31:08
+[INFO ] 2023-07-28 15:31:09.894 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 15:31:11.575 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 15:31:12.180 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 15:31:12.994 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 15:31:13.004 TestListener:38 - Test invalidPassword passed at 28-07-2023_15:31:13
+[INFO ] 2023-07-28 15:31:14.654 TestListener:28 - Test invalidUsername started at 28-07-2023_15:31:14
+[INFO ] 2023-07-28 15:31:14.661 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 15:31:15.463 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 15:31:17.139 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 15:31:17.743 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 15:31:17.905 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 15:31:17.908 TestListener:38 - Test invalidUsername passed at 28-07-2023_15:31:17
+[INFO ] 2023-07-28 15:31:19.509 TestListener:28 - Test successfulLogin started at 28-07-2023_15:31:19
+[INFO ] 2023-07-28 15:31:20.798 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 15:31:21.942 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 15:31:22.541 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 15:31:23.672 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 15:31:23.811 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 15:31:25.474 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 15:31:25.491 TestListener:38 - Test successfulLogin passed at 28-07-2023_15:31:25
+[INFO ] 2023-07-28 15:31:26.711 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 15:31:27.303 Base:151 - Driver session terminated.
