@@ -116,6 +116,7 @@ public class Base {
                 case "Android" -> {
                     String androidAppUrl = Objects.requireNonNull(getClass().getClassLoader().
                             getResource(props.getProperty("androidAppLocation"))).getPath();
+                    System.out.println(androidAppUrl);
 //
                     caps.setCapability(MobileCapabilityType.APP, androidAppUrl);
                     caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("androidAutomationName"));
@@ -123,7 +124,7 @@ public class Base {
                     caps.setCapability("systemPort", systemPort);
                     caps.setCapability("chromeDriverPort", chromeDriverPort);
 //                    caps.setCapability("appPackage", getProps().getProperty("androidAppPackage"));
-//                    caps.setCapability("appActivity", getProps().getProperty("androidAppActivity"));
+                    caps.setCapability("appActivity", getProps().getProperty("androidAppActivity"));
                     caps.setCapability("avd", "Nexus_6");
 
                     setDriver(new AndroidDriver(url, caps));

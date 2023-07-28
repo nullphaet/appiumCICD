@@ -224,3 +224,70 @@
 [INFO ] 2023-07-28 21:10:43.439 TestListener:38 - Test successfulLogin passed at 28-07-2023_21:10:43
 [INFO ] 2023-07-28 21:10:44.677 TestUtils:83 - Closing application
 [INFO ] 2023-07-28 21:10:45.288 Base:152 - Driver session terminated.
+[INFO ] 2023-07-28 21:38:43.033 Base:93 - Building session with URL: http://0.0.0.0:4723
+[ERROR] 2023-07-28 21:39:14.768 Base:136 - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.swaglabsmobileapp' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.swaglabsmobileapp.SplashActivity' or 'com.swaglabsmobileapp.com.swaglabsmobileapp.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'phaet.local', ip: 'fe80:0:0:0:c49:fc3b:71e4:7b16%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/phaet/TDDRefactored/target/test-classes/app/SauceLabs.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:avd=Nexus_6, appium:chromeDriverPort=11000, appium:newCommandTimeout=60, platformName=ANDROID, appium:systemPort=10000}], desiredCapabilities=Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}}]
+Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}
+[INFO ] 2023-07-28 21:40:14.493 Base:93 - Building session with URL: http://0.0.0.0:4723
+[ERROR] 2023-07-28 21:40:45.808 Base:136 - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.swaglabsmobileapp' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.swaglabsmobileapp.SplashActivity' or 'com.swaglabsmobileapp.com.swaglabsmobileapp.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'phaet.local', ip: 'fe80:0:0:0:c49:fc3b:71e4:7b16%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/phaet/TDDRefactored/target/test-classes/app/SauceLabs.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:avd=Nexus_6, appium:chromeDriverPort=11000, appium:newCommandTimeout=60, platformName=ANDROID, appium:systemPort=10000}], desiredCapabilities=Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}}]
+Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}
+[INFO ] 2023-07-28 21:49:54.830 Base:93 - Building session with URL: http://0.0.0.0:4723
+[ERROR] 2023-07-28 21:49:54.876 Base:137 - null
+[INFO ] 2023-07-28 21:54:04.366 Base:93 - Building session with URL: http://0.0.0.0:4723
+[ERROR] 2023-07-28 21:54:35.843 Base:137 - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.swaglabsmobileapp' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.swaglabsmobileapp.SplashActivity' or 'com.swaglabsmobileapp.com.swaglabsmobileapp.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'phaet.local', ip: 'fe80:0:0:0:c49:fc3b:71e4:7b16%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/phaet/TDDRefactored/target/test-classes/app/SauceLabs.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:avd=Nexus_6, appium:chromeDriverPort=11000, appium:newCommandTimeout=60, platformName=ANDROID, appium:systemPort=10000}], desiredCapabilities=Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}}]
+Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}
+[INFO ] 2023-07-28 22:10:32.543 Base:93 - Building session with URL: http://0.0.0.0:4723
+[ERROR] 2023-07-28 22:11:16.273 Base:137 - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.swaglabsmobileapp' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.swaglabsmobileapp.SplashActivity' or 'com.swaglabsmobileapp.com.swaglabsmobileapp.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'phaet.local', ip: 'fe80:0:0:0:c49:fc3b:71e4:7b16%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/phaet/TDDRefactored/target/test-classes/app/SauceLabs.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:avd=Nexus_6, appium:chromeDriverPort=11000, appium:newCommandTimeout=60, platformName=ANDROID, appium:systemPort=10000}], desiredCapabilities=Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}}]
+Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}
+[INFO ] 2023-07-28 22:14:23.312 Base:93 - Building session with URL: http://0.0.0.0:4723
+[ERROR] 2023-07-28 22:15:33.455 Base:137 - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.swaglabsmobileapp' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.swaglabsmobileapp.SplashActivity' or 'com.swaglabsmobileapp.com.swaglabsmobileapp.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'phaet.local', ip: 'fe80:0:0:0:c49:fc3b:71e4:7b16%en0'
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/phaet/TDDRefactored/target/test-classes/app/SauceLabs.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:avd=Nexus_6, appium:chromeDriverPort=11000, appium:newCommandTimeout=60, platformName=ANDROID, appium:systemPort=10000}], desiredCapabilities=Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}}]
+Capabilities {app: /Users/phaet/TDDRefactored/..., autoAcceptAlerts: true, automationName: UiAutomator2, avd: Nexus_6, chromeDriverPort: 11000, newCommandTimeout: 60, platformName: ANDROID, systemPort: 10000}
+[INFO ] 2023-07-28 22:36:55.218 Base:93 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 22:37:06.507 Base:131 - Android driver set up successfully
+[INFO ] 2023-07-28 22:37:07.942 TestListener:28 - Test invalidPassword started at 28-07-2023_22:37:07
+[INFO ] 2023-07-28 22:37:09.286 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 22:37:10.962 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 22:37:11.584 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 22:37:12.414 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 22:37:12.425 TestListener:38 - Test invalidPassword passed at 28-07-2023_22:37:12
+[INFO ] 2023-07-28 22:37:14.072 TestListener:28 - Test invalidUsername started at 28-07-2023_22:37:14
+[INFO ] 2023-07-28 22:37:14.077 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 22:37:14.874 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 22:37:16.559 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 22:37:17.164 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 22:37:17.337 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 22:37:17.338 TestListener:38 - Test invalidUsername passed at 28-07-2023_22:37:17
+[INFO ] 2023-07-28 22:37:18.859 TestListener:28 - Test successfulLogin started at 28-07-2023_22:37:18
+[INFO ] 2023-07-28 22:37:19.651 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 22:37:20.814 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 22:37:21.416 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 22:37:22.529 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 22:37:22.664 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 22:37:24.346 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 22:37:24.352 TestListener:38 - Test successfulLogin passed at 28-07-2023_22:37:24
+[INFO ] 2023-07-28 22:37:25.582 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 22:37:26.237 Base:154 - Driver session terminated.
