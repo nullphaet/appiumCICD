@@ -11,6 +11,7 @@ import org.testng.annotations.*;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.Properties;
 
 import static qa.Logger.log;
@@ -113,16 +114,16 @@ public class Base {
                     log().info("iOS driver set up successfully");
                 }
                 case "Android" -> {
-//                    String androidAppUrl = Objects.requireNonNull(getClass().getClassLoader().
-//                            getResource(props.getProperty("androidAppLocation"))).getPath();
+                    String androidAppUrl = Objects.requireNonNull(getClass().getClassLoader().
+                            getResource(props.getProperty("androidAppLocation"))).getPath();
 //
-//                    caps.setCapability(MobileCapabilityType.APP, androidAppUrl);
+                    caps.setCapability(MobileCapabilityType.APP, androidAppUrl);
                     caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("androidAutomationName"));
 //                    caps.setCapability("avd", avd);
                     caps.setCapability("systemPort", systemPort);
                     caps.setCapability("chromeDriverPort", chromeDriverPort);
-                    caps.setCapability("appPackage", getProps().getProperty("androidAppPackage"));
-                    caps.setCapability("appActivity", getProps().getProperty("androidAppActivity"));
+//                    caps.setCapability("appPackage", getProps().getProperty("androidAppPackage"));
+//                    caps.setCapability("appActivity", getProps().getProperty("androidAppActivity"));
                     caps.setCapability("avd", "Nexus_6");
 
                     setDriver(new AndroidDriver(url, caps));

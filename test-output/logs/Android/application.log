@@ -199,3 +199,28 @@
 [INFO ] 2023-07-28 17:06:38.068 TestListener:38 - Test successfulLogin passed at 28-07-2023_17:06:38
 [INFO ] 2023-07-28 17:06:39.328 TestUtils:83 - Closing application
 [INFO ] 2023-07-28 17:06:39.965 Base:151 - Driver session terminated.
+[INFO ] 2023-07-28 21:10:12.573 Base:92 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 21:10:23.317 Base:129 - Android driver set up successfully
+[INFO ] 2023-07-28 21:10:24.615 TestListener:28 - Test invalidPassword started at 28-07-2023_21:10:24
+[INFO ] 2023-07-28 21:10:26.792 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 21:10:28.563 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 21:10:29.187 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 21:10:30.006 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 21:10:30.016 TestListener:38 - Test invalidPassword passed at 28-07-2023_21:10:30
+[INFO ] 2023-07-28 21:10:31.745 TestListener:28 - Test invalidUsername started at 28-07-2023_21:10:31
+[INFO ] 2023-07-28 21:10:31.752 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 21:10:33.131 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 21:10:34.862 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 21:10:35.498 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 21:10:35.639 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 21:10:35.642 TestListener:38 - Test invalidUsername passed at 28-07-2023_21:10:35
+[INFO ] 2023-07-28 21:10:37.293 TestListener:28 - Test successfulLogin started at 28-07-2023_21:10:37
+[INFO ] 2023-07-28 21:10:38.133 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 21:10:39.878 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 21:10:40.499 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 21:10:41.624 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 21:10:41.767 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 21:10:43.430 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 21:10:43.439 TestListener:38 - Test successfulLogin passed at 28-07-2023_21:10:43
+[INFO ] 2023-07-28 21:10:44.677 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 21:10:45.288 Base:152 - Driver session terminated.
