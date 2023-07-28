@@ -61,7 +61,7 @@ public class Base {
     @AfterSuite
     public void afterSuite(){
         server.stop();
-//        log().info("Appium server stopped.");
+//        log().info("Appium server stopped");
     }
 
 
