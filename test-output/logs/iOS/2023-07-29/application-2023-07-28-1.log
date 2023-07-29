@@ -1,0 +1,116 @@
+[INFO ] 2023-07-28 14:22:09.993 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:23:15.252 Base:111 - iOS driver set up successfully
+[INFO ] 2023-07-28 14:23:17.462 TestListener:28 - Test invalidPassword started at 28-07-2023_14:23:17
+[INFO ] 2023-07-28 14:23:20.373 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:23:23.135 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:23:24.023 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:23:24.713 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:23:24.948 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:23:24
+[ERROR] 2023-07-28 14:23:24.949 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:23:25.711 TestListener:28 - Test invalidUsername started at 28-07-2023_14:23:25
+[INFO ] 2023-07-28 14:23:25.719 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:23:28.864 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:23:31.737 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:23:32.635 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:23:33.410 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:23:33.412 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:23:33
+[INFO ] 2023-07-28 14:23:34.196 TestListener:28 - Test successfulLogin started at 28-07-2023_14:23:34
+[INFO ] 2023-07-28 14:23:36.863 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:23:39.509 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:23:40.877 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:23:41.995 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:23:43.548 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:23:45.117 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:23:45.121 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:23:45
+[INFO ] 2023-07-28 14:23:45.510 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:23:46.698 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:23:56.087 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:24:00.986 Base:111 - iOS driver set up successfully
+[INFO ] 2023-07-28 14:24:01.674 TestListener:28 - Test invalidPassword started at 28-07-2023_14:24:01
+[INFO ] 2023-07-28 14:24:04.467 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:24:07.925 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:24:09.005 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:24:09.651 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:24:09.793 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:24:09
+[ERROR] 2023-07-28 14:24:09.796 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:24:10.823 TestListener:28 - Test invalidUsername started at 28-07-2023_14:24:10
+[INFO ] 2023-07-28 14:24:10.825 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:24:14.043 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:24:16.643 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:24:17.548 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:24:18.151 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:24:18.152 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:24:18
+[INFO ] 2023-07-28 14:24:18.915 TestListener:28 - Test successfulLogin started at 28-07-2023_14:24:18
+[INFO ] 2023-07-28 14:24:21.506 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:24:24.835 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:24:26.391 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:24:27.679 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:24:29.265 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:24:30.719 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:24:30.730 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:24:30
+[INFO ] 2023-07-28 14:24:31.111 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:24:32.273 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:30:11.461 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:30:28.384 Base:111 - iOS driver set up successfully
+[INFO ] 2023-07-28 14:30:29.260 TestListener:28 - Test invalidPassword started at 28-07-2023_14:30:29
+[INFO ] 2023-07-28 14:30:32.234 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:30:34.895 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:30:35.825 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:30:36.494 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:30:36.676 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:30:36
+[ERROR] 2023-07-28 14:30:36.683 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:30:37.514 TestListener:28 - Test invalidUsername started at 28-07-2023_14:30:37
+[INFO ] 2023-07-28 14:30:37.518 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:30:41.115 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:52:12.439 Base:111 - iOS driver set up successfully
+[INFO ] 2023-07-28 14:52:13.295 TestListener:28 - Test invalidPassword started at 28-07-2023_14:52:13
+[INFO ] 2023-07-28 14:52:16.525 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:52:19.847 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:52:20.834 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:52:21.447 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:52:21.894 TestListener:51 - Test invalidPassword failed at 28-07-2023_14:52:21
+[ERROR] 2023-07-28 14:52:21.903 TestListener:54 - Error message: expected [Username and password do not match any user in this service.bla] but found [Username and password do not match any user in this service.]
+[INFO ] 2023-07-28 14:52:23.048 TestListener:28 - Test invalidUsername started at 28-07-2023_14:52:23
+[INFO ] 2023-07-28 14:52:23.057 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:52:25.979 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:52:28.674 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:52:29.609 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:52:30.230 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:52:30.230 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:52:30
+[INFO ] 2023-07-28 14:52:30.932 TestListener:28 - Test successfulLogin started at 28-07-2023_14:52:30
+[INFO ] 2023-07-28 14:52:33.938 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:52:37.135 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:52:38.824 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:52:39.942 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:52:41.407 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:52:43.015 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:52:43.030 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:52:43
+[INFO ] 2023-07-28 14:52:43.545 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:52:44.697 Base:150 - Driver session terminated.
+[INFO ] 2023-07-28 14:55:40.935 Base:90 - Building session with URL: http://0.0.0.0:4723
+[INFO ] 2023-07-28 14:55:52.305 Base:111 - iOS driver set up successfully
+[INFO ] 2023-07-28 14:55:52.685 TestListener:28 - Test invalidPassword started at 28-07-2023_14:55:52
+[INFO ] 2023-07-28 14:55:55.764 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:55:58.385 BasePage:50 - Password is: password
+[INFO ] 2023-07-28 14:55:59.338 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:55:59.993 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:55:59.994 TestListener:38 - Test invalidPassword passed at 28-07-2023_14:55:59
+[INFO ] 2023-07-28 14:56:00.813 TestListener:28 - Test invalidUsername started at 28-07-2023_14:56:00
+[INFO ] 2023-07-28 14:56:00.818 LoginPage:47 - Login with username/password: username/secret_sauce
+[INFO ] 2023-07-28 14:56:03.988 BasePage:50 - Login is: username
+[INFO ] 2023-07-28 14:56:06.608 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:56:07.827 BasePage:39 - Login button clicked
+[ERROR] 2023-07-28 14:56:08.851 LoginPage:54 - Error text is: Username and password do not match any user in this service.
+[INFO ] 2023-07-28 14:56:08.862 TestListener:38 - Test invalidUsername passed at 28-07-2023_14:56:08
+[INFO ] 2023-07-28 14:56:09.767 TestListener:28 - Test successfulLogin started at 28-07-2023_14:56:09
+[INFO ] 2023-07-28 14:56:12.937 BasePage:50 - Login is: standard_user
+[INFO ] 2023-07-28 14:56:15.660 BasePage:50 - Password is: secret_sauce
+[INFO ] 2023-07-28 14:56:17.028 BasePage:39 - Login button clicked
+[INFO ] 2023-07-28 14:56:18.117 MenuPage:25 - Logging out
+[INFO ] 2023-07-28 14:56:19.587 BasePage:39 - Menu button clicked
+[INFO ] 2023-07-28 14:56:21.163 BasePage:39 - Clicking logout button
+[INFO ] 2023-07-28 14:56:21.184 TestListener:38 - Test successfulLogin passed at 28-07-2023_14:56:21
+[INFO ] 2023-07-28 14:56:21.710 TestUtils:83 - Closing application
+[INFO ] 2023-07-28 14:56:22.880 Base:150 - Driver session terminated.
+[ERROR] 2023-07-28 15:00:07.209 Base:133 - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'phaet.local', ip: 'fe80:0:0:0:c49:fc3b:71e4:7b16%en0'
