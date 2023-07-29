@@ -23,7 +23,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/androidTests.xml</suiteXmlFile>
-<!--                        <suiteXmlFile>src/test/iosTests.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/iosTests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>

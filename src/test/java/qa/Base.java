@@ -98,11 +98,11 @@ public class Base {
 
             switch (platformName) {
                 case "iOS" -> {
-//                    String iosAppUrl = Objects.requireNonNull(getClass().getClassLoader().
-//                            getResource(getProps().getProperty("iOSAppLocation"))).getPath();
+                    String iosAppUrl = Objects.requireNonNull(getClass().getClassLoader().
+                            getResource(getProps().getProperty("iOSAppLocation"))).getPath();
                     caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, getProps().getProperty("iOSAutomationName"));
-//                    caps.setCapability(MobileCapabilityType.APP, iosAppUrl);
-                    caps.setCapability("bundleId", getProps().getProperty("bundleId"));
+                    caps.setCapability(MobileCapabilityType.APP, iosAppUrl);
+//                    caps.setCapability("bundleId", getProps().getProperty("bundleId"));
                     caps.setCapability("webviewConnectTimeout", 30000);
                     caps.setCapability("wdaLocalPort", wdaLocalPort);
                     caps.setCapability("webkitDebugProxyPort", webkitDebugProxyPort);
