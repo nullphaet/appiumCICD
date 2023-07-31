@@ -71,8 +71,8 @@ public class LoginTests extends Base {
         loginPage.pressLoginBtn();
 
         String actualErrMsg = loginPage.getErrTxt();
-        String expectedErrMsg = strings.get().get("err_invalid_username_or_password")
-                + "bla";
+        String expectedErrMsg = 
+strings.get().get("err_invalid_username_or_password");
 
         assertEquals(actualErrMsg, expectedErrMsg);
     }
