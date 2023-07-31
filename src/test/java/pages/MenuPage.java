@@ -7,7 +7,6 @@ import qa.BasePage;
 
 import static qa.Logger.log;
 
-
 public class MenuPage extends BasePage {
     SettingsPage settingsPage;
 
@@ -23,6 +22,7 @@ public class MenuPage extends BasePage {
 
     public LoginPage logout() {
         log().info("Logging out");
+
         settingsPage = pressMenuBtn();
         settingsPage.pressLogoutBtn();
         return new LoginPage();

@@ -11,14 +11,13 @@ public class Logger {
         return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
     }
 
-
-    protected static void logFileSetup(String platformName) throws Exception {
-        String strFile = "test-output"+  File.separator + "logs" + File.separator + platformName;
+    protected static void logFileSetup(String platformName, String deviceName) throws Exception {
+        String strFile = "Test Logs" + File.separator + platformName + File.separator + deviceName;
         File logFile = new File(strFile);
         if (!(logFile.exists())) {
             boolean logDirCreated = logFile.mkdirs();
             if (!logDirCreated) {
-                throw new Exception("Failed to create the log file directory structure.");
+                throw new Exception("Failed to create log file directory structure.");
             }
         }
         ThreadContext.put("ROUTINGKEY", strFile);

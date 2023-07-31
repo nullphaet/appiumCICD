@@ -20,6 +20,7 @@ import static qa.Logger.logFileSetup;
 public class Base {
     protected static ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
     protected static ThreadLocal<String> platform = new ThreadLocal<>();
+    protected static ThreadLocal<String> device = new ThreadLocal<>();
     protected static ThreadLocal<Properties> props = new ThreadLocal<>();
     protected static ThreadLocal<HashMap<String, String>> strings = new ThreadLocal<>();
 
@@ -31,6 +32,14 @@ public class Base {
 
     public static String getPlatform() {
         return platform.get();
+    }
+
+    public static String getDevice() {
+        return device.get();
+    }
+
+    private void setDevice(String device1) {
+        device.set(device1);
     }
 
     public static Properties getProps() {
@@ -56,27 +65,27 @@ public class Base {
             server.start();
             server.clearOutPutStreams();
         }
-//        log().info("Appium server started.");
     }
 
     @AfterSuite
     public void afterSuite(){
         server.stop();
-        //some comment
-//        log().info("Appium server stopped");
     }
 
-
-    @Parameters({"platformName", "systemPort", "chromeDriverPort", "wdaLocalPort", "webkitDebugProxyPort"})
+    @Parameters({"platformName", "deviceName", "avd", "systemPort", "chromeDriverPort", "wdaLocalPort",
+            "webkitDebugProxyPort", "udid"})
     @BeforeTest
-    public void setUp(String platformName, @Optional("androidOnly") String systemPort,
-                      @Optional("androidOnly") String chromeDriverPort, @Optional("iOSOnly") String wdaLocalPort,
-                      @Optional("iOSOnly") String webkitDebugProxyPort) throws Exception {
+    public void setUp(String platformName, String deviceName, @Optional("androidOnly") String avd,
+                      @Optional("androidOnly") String systemPort, @Optional("androidOnly") String chromeDriverPort,
+                      @Optional("iOSOnly") String wdaLocalPort, @Optional("iOSOnly") String webkitDebugProxyPort,
+                      @Optional("iOSOnly") String udid) throws Exception {
+
         InputStream inputStream = null;
         InputStream xmlStrings = null;
         Properties props = new Properties();
 
-        logFileSetup(platformName);
+        logFileSetup(platformName,deviceName);
+        setDevice(deviceName);
 
         try {
             String propFileName = "config.properties";
@@ -107,8 +116,8 @@ public class Base {
                     caps.setCapability("wdaLocalPort", wdaLocalPort);
                     caps.setCapability("webkitDebugProxyPort", webkitDebugProxyPort);
                     caps.setCapability("includeSafariInWebviews", true);
-                    caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone_SE");
-                    caps.setCapability(MobileCapabilityType.UDID, "6A2A7817-6A53-4CFE-8978-2CE882F74DED");
+//                    caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14 Plus");
+                    caps.setCapability(MobileCapabilityType.UDID, udid);
 
                     setDriver(new IOSDriver(url, caps));
                     log().info("iOS driver set up successfully");
@@ -125,7 +134,7 @@ public class Base {
                     caps.setCapability("chromeDriverPort", chromeDriverPort);
 //                    caps.setCapability("appPackage", getProps().getProperty("androidAppPackage"));
                     caps.setCapability("appActivity", getProps().getProperty("androidAppActivity"));
-                    caps.setCapability("avd", "Nexus_6");
+                    caps.setCapability("avd", avd);
 
                     setDriver(new AndroidDriver(url, caps));
                     log().info("Android driver set up successfully");
@@ -151,6 +160,6 @@ public class Base {
     @AfterTest
     public void tearDown() {
         getDriver().quit();
-        log().info("Driver session terminated.");
+        log().info("Driver session closed");
     }
 }

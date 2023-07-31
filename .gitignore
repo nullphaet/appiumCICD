@@ -3,6 +3,16 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Custom Rules ###
+test-output/
+Test Logs/
+Test Screenshots/
+Test Videos/
+Extent.html
+${ctx:ROUTINGKEY}/
+
+
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml

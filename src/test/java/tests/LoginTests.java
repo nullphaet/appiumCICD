@@ -11,7 +11,6 @@ import pages.MenuPage;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 import static org.testng.Assert.*;
-import static qa.Logger.log;
 import static qa.TestUtils.closeApp;
 
 public class LoginTests extends Base {
@@ -19,12 +18,11 @@ public class LoginTests extends Base {
     ProductsPage productsPage;
     JSONObject loginUsers;
 
-
     @BeforeClass
     public void beforeClass() throws Exception {
         InputStream dataIs = null;
+        // check try-with-resources option
         try {
-
             String dataFileName = "data/loginUsers.json";
             dataIs = getClass().getClassLoader().getResourceAsStream(dataFileName);
             assert dataIs != null;
@@ -56,9 +54,7 @@ public class LoginTests extends Base {
     public void invalidUsername() {
         String username = loginUsers.getJSONObject("invalidUser").getString("username");
         String password = loginUsers.getJSONObject("invalidUser").getString("password");
-//        loginPage.enterUsername(loginUsers.getJSONObject("invalidUser").getString("username"));
-//        loginPage.enterPassword(loginUsers.getJSONObject("invalidUser").getString("password"));
-//        loginPage.pressLoginBtn();
+
         loginPage.login(username, password);
 
         String actualErrMsg = loginPage.getErrTxt();
@@ -75,8 +71,8 @@ public class LoginTests extends Base {
         loginPage.pressLoginBtn();
 
         String actualErrMsg = loginPage.getErrTxt();
-        String expectedErrMsg = strings.get().get("err_invalid_username_or_password");
-//                + "bla";
+        String expectedErrMsg = strings.get().get("err_invalid_username_or_password")
+                + "bla";
 
         assertEquals(actualErrMsg, expectedErrMsg);
     }
@@ -84,14 +80,16 @@ public class LoginTests extends Base {
     @Test
     public void successfulLogin() throws InterruptedException {
 
-        loginPage.enterUsername(loginUsers.getJSONObject("validUser").getString("username"));
-        loginPage.enterPassword(loginUsers.getJSONObject("validUser").getString("password"));
-        productsPage = loginPage.pressLoginBtn();
+        String username = loginUsers.getJSONObject("validUser").getString("username");
+        String password = loginUsers.getJSONObject("validUser").getString("password");
+
+        productsPage = loginPage.login(username, password);
 
         String actualTitle = productsPage.getPageTitle();
         String expectedTitle = strings.get().get("products_page_title");
 
         assertEquals(actualTitle, expectedTitle);
+
         loginPage = new MenuPage().logout();
     }
 }

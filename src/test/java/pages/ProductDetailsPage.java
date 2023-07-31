@@ -24,19 +24,17 @@ public class ProductDetailsPage extends MenuPage {
     @AndroidFindBy (accessibility = "test-Price")
     public WebElement itemPrice;
 
-    @iOSXCUITFindBy (iOSNsPredicate = "label == \"BACK TO PRODUCTS\" AND name == \"test-BACK TO PRODUCTS\"")
-    @AndroidFindBy (accessibility = "test-BACK TO PRODUCTS")
-    private WebElement backBtn;
-
     @iOSXCUITFindBy (xpath = "//XCUIElementTypeOther[@name=\"test-Image Container\"]/XCUIElementTypeOther/XCUIElementTypeImage")
     @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Image Container\"]/android.widget.ImageView\n")
     private WebElement itemImage;
 
+    @iOSXCUITFindBy (iOSNsPredicate = "label == \"BACK TO PRODUCTS\" AND name == \"test-BACK TO PRODUCTS\"")
+    @AndroidFindBy (accessibility = "test-BACK TO PRODUCTS")
+    private WebElement backBtn;
 
     public String getItemTitle() {
         return getText(itemTitle);
     }
-
 
     public String getItemDescription() {
         return getText(itemDescription);
@@ -46,19 +44,8 @@ public class ProductDetailsPage extends MenuPage {
         return getText(itemPrice);
     }
 
-/*    public void slbSwipe(String direction, double percent) {
-        BasePage.waitForVisibility(itemImage);
-        String swipeElementId = ((RemoteWebElement)itemImage).getId();
-        Base.driver.get().executeScript("mobile: swipeGesture", ImmutableMap.of(
-//                "left", 100, "top", 100, "width", 200, "height", 200,
-                "elementId", swipeElementId,
-                "direction", direction,
-                "percent", percent
-        ));
-    }*/
-
     public ProductsPage pressBackBtn() {
-        click(backBtn, "Click back-button");
+        click(backBtn, "Click back button");
         return new ProductsPage();
     }
 
@@ -66,8 +53,11 @@ public class ProductDetailsPage extends MenuPage {
         return ((RemoteWebElement)itemPrice).getId();
     }
 
+
     public void scrollToPrice () {
-        log().info("Performing scroll to price");
+        log().info("Performing scroll to price.");
+        waitForVisibility(itemImage);
+
         switch (getPlatform()) {
             case "Android" ->
                      getDriver().executeScript("mobile: scroll", ImmutableMap.of(

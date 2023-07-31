@@ -22,22 +22,19 @@ public class LoginPage extends BasePage {
     private WebElement loginBtn;
 
     @iOSXCUITFindBy (id = "Username and password do not match any user in this service.")
-    @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Error " +
-            "message\"]/android.widget.TextView\n")
+    @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView\n")
     private WebElement errMsg;
 
     public void enterUsername(String username) {
         clear(usernameField);
-//        log().info("Username is: " + username);
         sendKeys(usernameField, username, "Login is: " + username);
-//        return this;
     }
+
     public void enterPassword(String password) {
         clear(passwordField);
-//        log().info("Password is: " + password);
         sendKeys(passwordField, password, "Password is: " + password);
-//        return this;
     }
+
     public ProductsPage pressLoginBtn() {
         click(loginBtn, "Login button clicked");
         return new ProductsPage();
@@ -45,14 +42,15 @@ public class LoginPage extends BasePage {
 
     public ProductsPage login(String username, String password) {
         log().info("Login with username/password: " + username + "/" + password);
+
         enterUsername(username);
         enterPassword(password);
         return pressLoginBtn();
     }
+
     public String getErrTxt() {
-        String err = getText(errMsg);
-        log().error("Error text is: " + err);
-        return err;
+        log().error("Error text: " + errMsg);
+        return getText(errMsg);
     }
 
 }

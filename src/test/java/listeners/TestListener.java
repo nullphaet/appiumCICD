@@ -7,10 +7,9 @@ import org.testng.ITestResult;
 import org.testng.ITestContext;
 import qa.TestUtils;
 import reports.ExtentReport;
-
-import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import static qa.Base.getDevice;
 import static qa.Base.getPlatform;
 import static qa.Logger.log;
 
@@ -21,12 +20,11 @@ public class TestListener implements ITestListener {
         ITestListener.super.onTestStart(result);
         TestUtils.startScreencast();
 
-        ExtentReport.startTest(result.getName(), result.getMethod().getDescription())
-                .assignCategory(getPlatform())
-                        .assignAuthor("phaet");
-
         log().info("Test " + result.getName() + " started at " +
                 TestUtils.getCurrentTime());
+
+        ExtentReport.startTest(result.getName(), result.getMethod().getDescription())
+                .assignCategory(getPlatform()).assignAuthor("phaet").assignDevice(getDevice());
 
         ExtentReport.getTest().log(Status.INFO, "Test " + result.getName() + " started at " +
                 TestUtils.getCurrentTime());
@@ -35,6 +33,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
+
         log().info("Test " + result.getName() + " passed at " +
                 TestUtils.getCurrentTime());
 
@@ -47,7 +46,9 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
+
         byte[] screenshot = TestUtils.makeScreenshot(result);
+
         log().info("Test " + result.getName() + " failed at " +
                 TestUtils.getCurrentTime());
         if (result.getThrowable() != null) {

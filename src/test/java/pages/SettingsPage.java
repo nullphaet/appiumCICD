@@ -11,7 +11,7 @@ public class SettingsPage extends MenuPage {
     private WebElement logoutBtn;
 
     public LoginPage pressLogoutBtn() {
-        click(logoutBtn, "Clicking logout button");
+        click(logoutBtn, "Click logout button");
         return new LoginPage();
     }
 }

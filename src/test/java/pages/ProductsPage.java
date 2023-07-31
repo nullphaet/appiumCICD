@@ -4,8 +4,6 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import org.openqa.selenium.WebElement;
 
-
-
 public class ProductsPage extends MenuPage {
     @iOSXCUITFindBy (iOSClassChain = "**/XCUIElementTypeStaticText[`label == \"PRODUCTS\"`]")
     @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Cart drop zone\"]" +

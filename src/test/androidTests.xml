@@ -1,26 +1,28 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
-<suite name="Suite1" verbose="1" parallel="tests">
+<suite name="Android_Smoke" verbose="1" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="listeners.TestListener"/>
-<!--        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"></listener>-->
     </listeners>
-
-    <test name="Android" >
+    <test name="Galaxy Nexus" >
         <parameter name="platformName" value="Android"/>
+        <parameter name="avd" value="Galaxy_Nexus"/>
+        <parameter name="deviceName" value="Galaxy Nexus"/>
         <parameter name="systemPort" value="10000"/>
-        <parameter name="chromeDriverPort" value="11000"/>
-
+        <parameter name="chromeDriverPort" value="10001"/>
         <classes>
-            <class name="tests.LoginTests">
-                <!--            <methods>-->
-                <!--                <include name="invalidUsername" />-->
-                <!--            </methods>-->
-            </class>
-
-            <!--            <class name="tests.ProductTests"/>-->
+            <class name="tests.LoginTests"/>
+<!--            <class name="tests.ProductTests"/>-->
         </classes>
-
     </test>
-
+    <test name="Nexus 6" >
+        <parameter name="platformName" value="Android"/>
+        <parameter name="avd" value="Nexus_6"/>
+        <parameter name="deviceName" value="Nexus 6"/>
+        <parameter name="systemPort" value="11000"/>
+        <parameter name="chromeDriverPort" value="11001"/>
+        <classes>
+<!--            <class name="tests.LoginTests"/>-->
+            <class name="tests.ProductTests"/>
+        </classes>
+    </test>
 </suite>

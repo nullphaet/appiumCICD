@@ -20,7 +20,6 @@ public class Utils {
 
         Document document = builder.parse(file);
         document.getDocumentElement().normalize();
-//        Element root = document.getDocumentElement();
         NodeList nList = document.getElementsByTagName("string");
 
         for (int temp= 0; temp < nList.getLength(); temp++) {

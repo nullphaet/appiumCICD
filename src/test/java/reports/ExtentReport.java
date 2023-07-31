@@ -16,8 +16,8 @@ public class ExtentReport {
     public synchronized static ExtentReports getReporter() {
         if (extent == null) {
             ExtentSparkReporter spark = new ExtentSparkReporter(filePath);
-            spark.config().setDocumentTitle("Appium Framework");
-            spark.config().setReportName("Swaglabs app");
+            spark.config().setDocumentTitle("Test Document");
+            spark.config().setReportName("Test Report");
             spark.config().setTheme(Theme.DARK);
 
             extent = new ExtentReports();
@@ -29,7 +29,6 @@ public class ExtentReport {
     public static synchronized ExtentTest getTest() {
         return extentTestMap.get((int) Thread.currentThread().getId());
     }
-
 
     public static synchronized ExtentTest startTest(String testName, String desc) {
         ExtentTest test = getReporter().createTest(testName, desc);
